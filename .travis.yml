@@ -1,10 +1,30 @@
 language: go
+
 env: GO111MODULE=on
+
 deploy:
+
   provider: heroku
+
   api_key:
+
     secure: "jMAWvEZY1EmmUd8iFPxRSip4VtxkZ7iCBIdlZKdvq6sKUejzV/yvk3XwwTi08x9zU0OEIpxTrbs6KIYxnMGVrPPTlXuZUMxJT1HT0iX0lR6gdT33+BU60uwJfOEgx3SDvZ20K6xET4mmCgYxFl9wpbksnoxOfRukfFDvc0IscMqauMUSZf/TKEKlC1g1VVCLGfAYo9CXZZi4usn9UlZ716pbJ0cDv+YOAK/y3BPrOJThypXuLs/kOH16oeP9ZOJNoeJzjYA+I4F+I8jNayTa7qVjbIlYTUw7AYlP9bpsr8Z8AsnSPaVC/xi1muAfHlrj9ih9EG9pd/O9y8hzvLjgkKa1wXpWDss3IVRSKyXyaCEh0lYQAonm49DMQ4eaCu/TSH5NEvAtqUc8HV8PIesWGThVHpsjmc24+hZul+mUBk56txgyvkFE4px7qrsZneOVULOQ1AsMyeZGqBuFSJsVe6VLz1PpxHTRM/1m9DR7hQNHqqBrtfTRWldKZAPRAcJYuWKyru9tdu2viEonfXrGY+CN8vH0mZkUx1SvLHGl4ha1a38OO/5bYmNLrg+ct2Ejuxfm3FGHNjOmNjX57883mpnIVn7FXQw6TIXO+A0mIBOcURuUPUxf27ZdS5lEKZFmEKaxOmzpc3bPvUQBzmDcu3Yzn8LTsbtBs59VYEmojt0="
+
   app: datos2-actividad1
+
+addons:
+
+  sonarcloud:
+
+    organization: "nachogranados"
+
+    token:
+
+      secure: "bfulpfXi5wRz9xubrOpGDH2uB+5S59L+7vRsXQC13Mu2iY37mY0yGSj4rZnnxoDW6xiDDMreJajR2+1bj6QMRX1ObJEcy4oKIid2/PHOR6iKJqxIqCsiIoq6vlCtp1J+1KMdVQ6+6YmDQie+NBuS2BsM5HqczTtNT5PvQwXRdRtVVdLbfuFn2Yw+FijWqlsBTKBpbtSqSovIXG0cAa7Y9QpsFhna1Q4M4An4rnZebqNIvgjwJEPs5ZbMTAzxUpEYVaVfdUkK7u/6Ddlo2yhol1Qbzgqt5i/lEJ32VpK+EjgzGH8WVHUjv83bDS/0DS88/xiSiN31H+LK98sWbAV2l/Ng+9ObiWa6D7dTdlBBpVwQ7C9nA76CFXnSlxfOtu4RboolaLEWHR26RjE16EvC0ROqD2N0s1xCuQHRabYZ+xN8QT47VlIOJen4aYOoOmWlvsOpQOluxV28bnK/SaRXvelGeUvbM3IC47FMqpFpwsKB1iUZltoWIFbLenaMmKj3C5R+RcB93FXIety/0FKxqwHhPQRKyeFhJi8eQp0JiD61HIUCyoiE7JIX7zVQLSVm4XagsoBhT3dQJX/3T3C+8+9ftf9pLt16NofM2vzMPrcJknpHdxFKxXyeri+xySk7TN5iQQqFZ1vAW2gK5NHba4rw9ySSqaj+NXOSIebZZVo="
+
+script:
+
+  - sonar-scanner
 
 
 
