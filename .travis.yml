@@ -1,3 +1,7 @@
 language: go
-env:
-  GO111MODULE=on
+env: GO111MODULE=on
+deploy:
+  provider: heroku
+  api_key:
+    secure: NeteOtxTyMdx64O3aCagMcEQzsYhUSHl3m5rvjf2ObgOL59XOQkLiShbrzxgrB0wY1uTodA3X1rEHmZE6ndTHu98Nw0bVk322qulwq7A9Y/E7mk5R/Yiapkar+VkMi9FioooRCKd50BoW/qltQe1izURX//O1BY4iCZ2EPbJ9OjA+Z4rbXbfx5T8n30yeA3D92OLeDOUmCS6GUzgYoknZE18iBZm/zVfmc/9Kg+wvm1wTyFco50gkSLZ0kyjK/j0fvlmDlwvM7qvVZ+jcWI9sPN09hZPyf8WkySfhPWtC2nhy6bxqDfSA2sFQwkvSL2apIZn+Mgu0++ZD+0LpnvcLHgVAL0YIB5un12VnzVFKhQUWR9JSlbCIen8uypKQwEu6Tx2PCaQAZFAdq+fcLN/edUVobXErlaf+WMGyvJS8aEoFmyDARlMfLkuEcCRuEVTYkWxOp1DbdTz0++Al0ZdT5j23cg3QFFey+t/Ep3Bp3eHL6FovzmhfJLolZB3QR1jVddl191ErCKM1g8fnmKgrddJh86qKOuepuYgTHOgCXfeR6oZQClVHVFYO1JNTiKV1abl/EcuP3lJQGpLHkITdjXj0Cj43Y5jSAfEEheLTWFztA797G1XojxNefMWm3bJT9Y/ThoDQ44Shn254NTHMxgd8uprh/GZ4AKvUlegmTs=
+  app: datos2-actividad1
