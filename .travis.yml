@@ -24,7 +24,11 @@ addons:
 
 script:
 
-  - sonar-scanner
+  - go -m main.TestSum
+
+
+
+  #- sonar-scanner
 
 
 
