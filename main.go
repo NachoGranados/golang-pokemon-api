@@ -48,14 +48,6 @@ func commonMiddleware(next http.Handler) http.Handler {
 	})
 }
 
-
-
-
-func HeLlOwWoRlD(int a);
-
-
-
-
 func main() {
 	fmt.Println("Pokemon Rest API")
 	handleRequests()

@@ -3,42 +3,18 @@ language: go
 env: GO111MODULE=on
 
 deploy:
-
   provider: heroku
 
   api_key:
-
     secure: "jMAWvEZY1EmmUd8iFPxRSip4VtxkZ7iCBIdlZKdvq6sKUejzV/yvk3XwwTi08x9zU0OEIpxTrbs6KIYxnMGVrPPTlXuZUMxJT1HT0iX0lR6gdT33+BU60uwJfOEgx3SDvZ20K6xET4mmCgYxFl9wpbksnoxOfRukfFDvc0IscMqauMUSZf/TKEKlC1g1VVCLGfAYo9CXZZi4usn9UlZ716pbJ0cDv+YOAK/y3BPrOJThypXuLs/kOH16oeP9ZOJNoeJzjYA+I4F+I8jNayTa7qVjbIlYTUw7AYlP9bpsr8Z8AsnSPaVC/xi1muAfHlrj9ih9EG9pd/O9y8hzvLjgkKa1wXpWDss3IVRSKyXyaCEh0lYQAonm49DMQ4eaCu/TSH5NEvAtqUc8HV8PIesWGThVHpsjmc24+hZul+mUBk56txgyvkFE4px7qrsZneOVULOQ1AsMyeZGqBuFSJsVe6VLz1PpxHTRM/1m9DR7hQNHqqBrtfTRWldKZAPRAcJYuWKyru9tdu2viEonfXrGY+CN8vH0mZkUx1SvLHGl4ha1a38OO/5bYmNLrg+ct2Ejuxfm3FGHNjOmNjX57883mpnIVn7FXQw6TIXO+A0mIBOcURuUPUxf27ZdS5lEKZFmEKaxOmzpc3bPvUQBzmDcu3Yzn8LTsbtBs59VYEmojt0="
-
   app: datos2-actividad1
 
 addons:
-
   sonarcloud:
-
     organization: "nachogranados"
-
     token:
-
-      secure: "NwBOSC/fPAQ7SAfxYbYQsXpOaMcH2tEHPKuAGyf3PEObk4y6uAnlILtMD8cuNx5JomH/qHcc9cZNOzJtj8JqR/7izc8/56S9qA1HHTQuYZHJB5mLZVTP0Y/51u8hSjOsIBVr217fcVnL11zwrTDxJ4P6Cnq9qYCBJ3qbZnsnOnf+IlUOv1kq+CGTPcg/bKVWwUpPezsNHEizbmxGi80XHIXW7oXHj/tvrdsJoppn7s03TUGv5V9bz5rxpR6bFsbjrPLViwAXJkH/KI3aFNc6U0koqVcohGkl5xzm7ZkMqVGyXJHBz8gOoqxqFO7Eitid/WYkjTrKoTM38AAD57fcyPpsEux75Bc+ZxDZBx+MlBrWiLSN+290P/ssZ8L/dyFgalzmSji+Fx8FEP8TRNMJRoUImzBLIOmW74hb3ioN15bL6fYTyLOcVbTHjH2faxAdA6RjxJCfQOCyw3wWgvYHVswjWuvrwdsYoWCNDih/McCSnYTpF2/If28K17RPlVrlzQpT6SPUHdbnPms7/6ZltkpyXVSqE2hUROfUsuyrOhPJFdg8VCGZhyXg9jlhS25dnig1OQgzqGdyswuz//ROCC40QA1B/0+pq4/Dz6hFQbPFAQ72do6VgYy7ntKmL8CJ+mPESXC4sYmEISjAAe4bFIK4aNUXPKLa5TdoXLwDBKo="
-
-git:
-
-  depth: false
+      secure: "dMV1659g/HN9Ooq0YtRmDwR5E9QWwVWXPv6sO1/Ag6NBL8x9r4VBVS2GRLqqFsqjD4JbZ6JVtVoOakH50TP7LHzFfKbeD1jszVL8b/p1Q1aXv+AbtAmCPfqzHSdJ4FIQam72Drf+jre0s0uWXHqC5mVbJ/GCr4geYSH6gkE4i0fR1qPa3dWyldN8P4u12yJ6y11p4lrdDCWOt5n4ImwcaJxCxrY1faDq/MUHCEOkkZEgintPXNvvP3CaYIBMNNehptbl0+Tqv1NieWAratKDHWZz2R+NcYuYMGWpJ7Bfs8udyI+ZWbEUryXu0of5GzdoELImjfwwByjvMU5+PC2dSMcXTRJGdswuch+rB3a4WICUlEt90DkcAGORh3JTNXBGBX6X9F6J5p/AlcD1MCh8TTSAJshhTG3WRQJlCm6ZBmEBu8qZK+ugOWvOZjcZ6VoaEkDPQb7MKiClU28yjL0zJamojBrohYtRCZ7pj8QKzvhZQTgv72klE4SIzRisDBO3FYWP/7Avrb46XRUtLnWcbMs4W5GMdb/AeNJAIO0fV54JI+9RrY+xtgpADljzjmxgiqLzROpQHU9y2CcPk1j1XOIcfLhQDlBOYS7v+Z2a0LyZ/B1qZEyqkVOpCNVuE3ZiLeCzKIZX1qDR+h3Vdm5Tx+YUxZ5p/cdrpmV555SoiuI="
 
 script:
 
   - sonar-scanner
-
-
-
-
-
-
-
-
-
-
-
-
-
